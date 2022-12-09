@@ -12,7 +12,8 @@ function ContactSection() {
                         href={f.encoded ? undefined : f.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex flex-row justify-center gap-2">
+                        className="flex flex-row justify-center gap-2"
+                    >
                         <f.icon className="self-center"/>
                         <span className="font-[Poppins] font-extrabold">
                             {f.encoded ? atob(f.text) : f.text}
