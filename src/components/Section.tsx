@@ -22,11 +22,22 @@ export function Section({ id, title, dark = false, children }: SectionProps) {
                 title="Image by vector_corp on Freepik"
             />
             <div className="container relative z-20 mx-auto max-w-6xl py-16">
-                <h2 className={clsx('text-5xl font-bold text-center uppercase font-[Kanit] font-bold', [ dark ? 'text-white' : 'text-primary' ])}>
+                <h2 className={clsx(
+                    'text-5xl font-bold text-center uppercase font-[Kanit]',
+                    [ dark ? 'text-white' : 'text-primary' ]
+                )}>
                     {title}
                 </h2>
-                <div className={clsx('mx-auto my-6 w-12 h-2 rounded-xl', [ dark ? 'bg-tertiary' : 'bg-secondary' ])}/>
-                <div className={clsx('text-lg p-4', [ dark ? 'text-white' : 'text-primary' ])}>
+
+                <div className={clsx(
+                    'mx-auto my-6 w-12 h-2 rounded-xl',
+                    [ dark ? 'bg-tertiary' : 'bg-secondary' ]
+                )}/>
+
+                <div className={clsx(
+                    'text-lg p-4',
+                    [ dark ? 'text-white' : 'text-primary' ]
+                )}>
                     {children}
                 </div>
             </div>

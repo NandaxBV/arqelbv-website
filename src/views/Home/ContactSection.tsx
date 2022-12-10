@@ -1,8 +1,14 @@
 import { Section } from '@/components';
 import HomeContent from '@/content/home';
+import { useCallback } from 'react';
 
 
 function ContactSection() {
+    const getText = useCallback((text: string, encoded?: boolean) => {
+        if (encoded) return atob(text);
+        return text;
+    }, []);
+
     return (
         <Section id="contact" title="Contact">
             <div className="mx-auto grid grid-cols-1 gap-8 text-2xl text-tertiary md:grid-cols-3">
@@ -16,7 +22,7 @@ function ContactSection() {
                     >
                         <f.icon className="self-center"/>
                         <span className="font-[Poppins] font-extrabold">
-                            {f.encoded ? atob(f.text) : f.text}
+                            {getText(f.text, f.encoded)}
                         </span>
                     </a>
                 ))}

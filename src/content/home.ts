@@ -23,8 +23,8 @@ export default {
         }
     ],
     contact: [
-        { icon: AiFillPhone, text: 'KzMxIDYgODEwMiAxODU4', encoded: 'true' },
-        { icon: AiFillMail, text: 'aW5mb0BhcnFlbC5jb20=', encoded: 'true' },
+        { icon: AiFillPhone, text: 'KzMxIDYgODEwMiAxODU4', encoded: true },
+        { icon: AiFillMail, text: 'aW5mb0BhcnFlbC5jb20=', encoded: true },
         { icon: AiFillLinkedin, text: 'LinkedIn', href: 'https://www.linkedin.com/company/arqel/' }
     ]
 };

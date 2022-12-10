@@ -8,7 +8,6 @@ interface LayoutProps {
 }
 
 function Layout({ children }: LayoutProps) {
-
     return (
         <>
             <NavigationBar/>
