@@ -8,7 +8,7 @@ function AboutSection() {
             <div className="grid grid-cols-2 gap-10 md:grid-cols-4">
                 <div className="col-span-2 self-center text-xl font-medium md:col-span-3">
                     {HomeContent.about.description.map(line => (
-                        <p key={line.slice(0, 10)} className="mb-3 text-left">{line}</p>
+                        <p key={line.slice(0, 10)} className="mb-3 text-left font-light">{line}</p>
                     ))}
                 </div>
                 <div className="col-span-2 self-center md:col-span-1">
