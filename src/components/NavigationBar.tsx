@@ -36,7 +36,7 @@ export function NavigationBar() {
                             alt="Arqel B.V. Text"
                         />
                     </a>
-                    <ul className="hidden gap-12 justify-end self-center text-xl font-extrabold uppercase lg:flex font-[Kanit]">
+                    <ul className="hidden gap-12 justify-end self-center text-xl font-extrabold uppercase lg:flex font-[Work Sans]">
                         {navigation.map(link =>
                             <li
                                 key={link.href}

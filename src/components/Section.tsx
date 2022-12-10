@@ -23,7 +23,7 @@ export function Section({ id, title, dark = false, children }: SectionProps) {
             />
             <div className="container relative z-20 mx-auto max-w-6xl py-16">
                 <h2 className={clsx(
-                    'text-5xl font-bold text-center uppercase font-[Kanit]',
+                    'text-5xl font-semibold text-center uppercase font-[Work Sans]',
                     [ dark ? 'text-white' : 'text-primary' ]
                 )}>
                     {title}

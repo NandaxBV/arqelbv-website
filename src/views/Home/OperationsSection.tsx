@@ -23,7 +23,7 @@ function OperationsSection() {
 
                         <div className="my-0.5"/>
 
-                        <h4 className="font-bold text-2xl font-[Kanit]">
+                        <h4 className="font-bold text-2xl font-[Work Sans]">
                             {operation.name}
                         </h4>
 
